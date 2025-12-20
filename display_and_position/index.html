@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Position</title>
+    <style>
+        header{
+            background-color: yellow;
+            height: 60px;
+        }
+        #firstdiv{   
+            height: 400px;
+            width: 500px;
+            background-color: green;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+        }
+        .div{
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+        }
+        #singlediv{
+            position: fixed;
+            left: 650px 
+        }
+        #seconddiv{
+            z-index: 1;
+            background-color: aqua; 
+            left: 50px;
+            position: absolute;
+        }
+        #thirddiv{
+            z-index: 2;
+            background-color: aquamarine;
+            position: absolute;
+        }
+        footer{
+            top: 500px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        NavBar
+        <br>
+        <a href="www.google.com">Google</a>
+        <br>
+        <a href="www.facebook.com">facebook</a>
+    </header>
+    <main>
+        <div id="firstdiv">Div</div>
+        <div class="div" id="singlediv">First Div</div>
+        <div class="div" id="seconddiv">Second Div</div>
+        <div class="div" id="thirddiv">Third Div</div>
+
+    </main>
+    <footer>Contact Me at - vinayakagrawal837@gmail.com</footer>
+</body>
+</html>
